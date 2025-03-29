@@ -6,7 +6,7 @@ const app = express();
 app.use(express.json());
 require('dotenv').config();
 
-Port = process.env.PORT 
+Port = process.env.PORT || 5000
 
 app.use('/admin',admin)
 app.use('/customer',customer)
